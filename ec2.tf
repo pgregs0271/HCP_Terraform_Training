@@ -3,6 +3,6 @@ provider "aws" {
 }
 
 resource "aws_instance" "web" {
-  ami           = data.aws_ami.myimage.image_id
+  ami = "ami-0866a3c8686eaeeba"
   instance_type = "t2.micro"
 }
